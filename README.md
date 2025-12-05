@@ -2,7 +2,7 @@ Visão geral
 O projeto é uma aplicação web simples onde o usuário informa seu nome, uma nota de 1 a 5, um comentário e escolhe uma categoria (produto, atendimento ou sugestão). Após o envio, o sistema valida os dados em tempo real e exibe uma mensagem personalizada de agradecimento, incluindo o nome, a categoria selecionada e um emoji correspondente à nota, com destaque visual pela cor de fundo.​
 
 Tecnologias e conceitos
-HTML5 semântico com uso de <form>, <fieldset>, <legend>, <label>, <main> e atributos como required, placeholder, min, max, autofocus e aria-label para acessibilidade.​
+HTML5 semântico com uso de form, fieldset, legend, label, main e atributos como required, placeholder, min, max, autofocus e aria-label para acessibilidade.​
 
 CSS3 com layout responsivo, display: flex, seletor universal com box-sizing: border-box, foco visual com :focus, validação visual com :valid e :invalid, transições suaves em transition: background-color 0.5s ease e pseudo-elementos ::before para ícones decorativos nos rótulos.​
 
