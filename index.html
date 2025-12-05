@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 3 DW</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="form-container">
+            <form id="feedback-form">
+                <div class="row mb-3">
+                    <fieldset class="nome-nota">
+                        <legend>Forneça seu nome e sua nota sobre os serviços</legend>
+                        <div class="col-md-6-mb-3">
+                            <label for="nome-input" id="nome-label">Nome:</label>
+                            <input type="text" name="nome" id="nome-input" class="input form-control" required>
+                            <small id="erro-nome" class="text-danger d-none">Informe seu nome.</small>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="nota-input" id="nota-label">Nota:</label>
+                            <input type="number" name="nota" id="nota-input" class="input form-control" min="1" max="5" required>
+                            <small id="erro-nota" class="text-danger d-none">A nota deve ser entre 1 e 5.</small>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Deixe um comentário e selecione a categoria</legend>
+                        <div class="mb-3">
+                            <label for="textarea-comentario" id="textarea-label">Escreva o seu comentário abaixo</label>
+                            <textarea id="textarea-comentario"
+                                placeholder="Escreva aqui um comentário sobre produto, atendimento ou a nossa gestão..."
+                               class="form-control" required>
+                </textarea>
+                 <small id="erro-comentario" class="text-danger d-none">Escreva um comentário.</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="categoria-select" id="categoria-label">Seleciona uma categoria</label>
+                            <select id="categoria-select" class="form-control" required>
+                                <option>Produto</option>
+                                <option>Atendimento</option>
+                                <option>Sugestão</option>
+                            </select>
+                            <small id="erro-categoria" class="text-danger d-none">Selecione uma categoria.</small>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-button">
+                    <button type="submit" class="btn btn-primary">Enviar feedback</button>
+                </div>
+            </form>
+
+            <div id="mensagem-feedback" class="alert d-none" role="alert">
+                <span id="mensagem-texto"></span>
+                <button id="mensagem-fechar" type="button" class="btn btn-primary">Fechar</button>
+            </div>
+
+
+
+
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding:50px;
+  border: 0.6px solid rgb(123, 198, 248);
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  max-width: 500px;
+  width:90%;
+  background-color: #f7f9fc;
+}
+
+.nome-nota div{
+    margin-top: 10px;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;              
+  border: 1px solid #4633f5;  
+  box-shadow: 0 0 4px rgba(52, 105, 252, 0.6); 
+  background-color: #f0f8ff;  
+}
+
+fieldset{
+    border:none;
+}
+
+legend{
+  display:flex;
+  text-align: center;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom: 4px;
+}
+
+input:valid:focus,
+textarea:valid:focus {
+  border-color: #28a745;
+}
+
+input:invalid:focus,
+textarea:invalid:focus {
+  border-color: #dc3545;
+}
+
+.form-button{
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #0056b3;
+  font-size: 18px;
+}
+
+#categoria-label::before {
+  content: "\2756";     
+  margin-right: 6px;
+  color: #74eb04;
+  font-size: 14px;
+}
+
+#textarea-label::before {
+  content: "\1F4AC";    
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+#nota-label::before {
+  content: "\1F4DD";    
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+#nome-label::before {
+  content: "\1F464";    
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+
+.alert{
+  margin-top: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mensagem-texto{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:fit-content;
+  margin-bottom: 10px;
+}
+
+
