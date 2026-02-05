@@ -1,23 +1,121 @@
-Visão geral
-O projeto é uma aplicação web simples onde o usuário informa seu nome, uma nota de 1 a 5, um comentário e escolhe uma categoria (produto, atendimento ou sugestão). Após o envio, o sistema valida os dados em tempo real e exibe uma mensagem personalizada de agradecimento, incluindo o nome, a categoria selecionada e um emoji correspondente à nota, com destaque visual pela cor de fundo.​
+Sistema de Coleta e Validação de Feedback Web
+Aplicação web para coleta de feedbacks de usuários, com validação em tempo real e exibição de uma mensagem dinâmica de agradecimento baseada na nota e na categoria escolhida.
 
-Tecnologias e conceitos
-HTML5 semântico com uso de form, fieldset, legend, label, main e atributos como required, placeholder, min, max, autofocus e aria-label para acessibilidade.​
+✨ Funcionalidades
+Formulário de feedback com:
 
-CSS3 com layout responsivo, display: flex, seletor universal com box-sizing: border-box, foco visual com :focus, validação visual com :valid e :invalid, transições suaves em transition: background-color 0.5s ease e pseudo-elementos ::before para ícones decorativos nos rótulos.​
+Nome
 
-Bootstrap 5 via CDN, utilizando sistema de grid (.row, .col-md-6), classes de formulário (.form-control, espaçamentos como .mb-3) e componente Alert para exibir o retorno da avaliação com as classes de contexto (alert-success, alert-warning, alert-danger).​
+Nota (1 a 5)
 
-JavaScript vanilla para interceptar o envio do formulário, impedir o reload, validar campos (incluindo regra de nome válido), exibir mensagens de erro amigáveis e montar dinamicamente a mensagem final com emoji adequado para cada faixa de nota.​
+Comentário
 
-Funcionalidades principais
-Formulário de feedback completo: campos de nome, nota numérica (1–5), comentário e categoria, agrupados semanticamente e com foco automático no nome ao carregar a página.​
+Categoria (produto, atendimento ou sugestão)
 
-Validação e UX: validação nativa do navegador combinada com validação customizada em JavaScript, mensagens de erro em texto com classes Bootstrap (text-danger) e feedback visual imediato enquanto o usuário preenche.​
+Validação em tempo real:
 
-Mensagem dinâmica de agradecimento: exibição de um Alert do Bootstrap logo abaixo do formulário com o resumo do feedback, cor de fundo correspondente à avaliação e emoji diferente para notas baixas, médias e altas.​
+Validação nativa do navegador
 
-Estilo limpo e responsivo: layout centralizado, uso de flexbox e grid, hover em botões, cores suaves por categoria e pequenos detalhes visuais com pseudo-elementos para deixar a interface mais agradável.​
+Regras adicionais em JavaScript (incluindo validação de nome)
 
-Objetivo do projeto
-Este projeto foi desenvolvido como avaliação prática, mas pensado para portfólio: demonstra domínio de fundamentos de HTML/CSS, integração com Bootstrap, manipulação de DOM em JavaScript puro e cuidado com experiência do usuário e acessibilidade.
+Mensagens de erro amigáveis
+
+Mensagem dinâmica de agradecimento:
+
+Uso de componente Alert do Bootstrap
+
+Cor do alerta de acordo com a avaliação (positiva, neutra, negativa)
+
+Emoji diferente para cada faixa de nota
+
+Interface responsiva e acessível:
+
+Layout centralizado
+
+Comportamento consistente em diferentes tamanhos de tela
+
+Melhorias de acessibilidade com atributos semânticos e aria-*
+
+🛠 Tecnologias utilizadas
+HTML5 semântico
+
+form, fieldset, legend, label, main
+
+Atributos: required, placeholder, min, max, autofocus, aria-label
+
+CSS3
+
+Layout responsivo com display: flex
+
+box-sizing: border-box via seletor universal
+
+Estados de foco com :focus
+
+Feedback visual de validação com :valid e :invalid
+
+Transições suaves (transition: background-color 0.5s ease)
+
+Pseudo-elementos ::before para ícones decorativos nos rótulos
+
+Bootstrap 5 (via CDN)
+
+Grid system (.row, .col-md-6)
+
+Classes de formulário (.form-control, .mb-3, etc.)
+
+Componente Alert (alert-success, alert-warning, alert-danger)
+
+JavaScript vanilla
+
+Interceptação do envio do formulário (preventDefault)
+
+Validação customizada de campos
+
+Exibição de mensagens de erro com classes do Bootstrap (text-danger)
+
+Montagem dinâmica da mensagem final com emoji por faixa de nota
+
+🚀 Como executar
+Clone o repositório:
+
+bash
+git clone https://github.com/usuario/repositorio.git
+cd repositorio
+Abra o arquivo index.html diretamente no navegador
+ou sirva o projeto com qualquer servidor HTTP simples.
+
+Exemplo com VS Code Live Server ou um servidor estático à sua escolha.
+
+🔍 Comportamento da aplicação
+Ao carregar a página, o foco vai automaticamente para o campo de nome.
+
+Enquanto o usuário preenche:
+
+Campos obrigatórios e intervalos de nota são validados.
+
+Mensagens de erro são exibidas abaixo dos campos, quando necessário.
+
+Ao enviar o formulário com dados válidos:
+
+A página não é recarregada.
+
+Um Alert do Bootstrap aparece logo abaixo do formulário com:
+
+Nome do usuário
+
+Categoria selecionada
+
+Comentário
+
+Emoji e cor de fundo correspondentes à nota informada
+
+🎯 Objetivo do projeto
+Este projeto foi desenvolvido como uma avaliação prática e pensado para compor portfólio, demonstrando:
+
+Domínio de HTML e CSS semântico
+
+Integração com Bootstrap 5 sem dependência de frameworks JS
+
+Manipulação de DOM usando apenas JavaScript puro
+
+Preocupação com UX, mensagens de erro claras e acessibilidade básica
